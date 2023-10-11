@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Class 8</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+              [data-theme="dark"] {
+        --primary: #217f1b;
+        --primary-hover: #1d6918;
+      }
+
+      /* Indigo (Common styles) */
+      :root {
+        --form-element-active-border-color: var(--primary);
+        --form-element-focus-color: var(--primary-focus);
+
+      }
+
+    </style>
+</head>
+<body onload="Show()">
+    <div class="container">
+        <article>
+
+            <article style="text-align: center">
+                <ol id="list" start="0"></ol>
+            </article>
+
+
+            <div class="grid">
+                <article>
+                <input type="text" placeholder="Which song would you like to add" id="songName">
+                <button onclick="InsertSong()">Insert</button>
+                </article>
+
+                <article>
+                    <h4 id="currentPlayingP" style="text-align: center"></h4>
+                </article>
+
+                <article>
+                <!-- <input type="number" placeholder="Which song number would you like to delete?" id="songNumber"> -->
+                <button onclick="DeleteSong()">Delete</button>
+                </article>
+            </div>
+
+            <div class="grid">
+
+                <article>
+                <button onclick="goBack()">Go back</button>
+                </article>
+
+                <article>
+                    <h4 id="availableSongs" style="text-align: center"></h4>
+                </article>
+
+                <article>
+                    <h5>History</h5>
+                    <p id="songHistory" style="text-align: center"></p>
+                </article>
+
+            </div>
+
+            <!-- Estos botones solo eran para el inicio de la clase, ya no se usan jeje
+            <div class="grid">
+                <button onclick="Clean()">Clean</button>
+                <button onclick="CleanQuantity()">Clean quantity</button>
+                <button onclick="Replace()">Clean quantity</button>
+            </div>
+            -->
+
+        </article>
+    </div>
+</body>
+</html>
